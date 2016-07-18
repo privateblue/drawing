@@ -16,8 +16,8 @@ Mind that coordinates are all 0-based (meaning the top left corner of the canvas
 
 ## Build and run
 
-You can run the program from SBT by issuing `sbt run`, or you can build it with `sbt assembly`, and then run it with `java -jar target/scala-2.11/drawing.jar`.
+You can run the program using SBT by issuing `sbt run`, or you can build it first with `sbt assembly`, and then run it with `java -jar target/scala-2.11/drawing.jar`.
 
 ## Dependencies
 
-DRAWING depends on the [cats](http://typelevel.org/cats/), [scala parser combinators](https://github.com/scala/scala-parser-combinators) and [scalatest](http://www.scalatest.org/) libraries. Cats is used for encoding effects (e.g. parser failure, state change etc.) as types, using monads. Parser combinators are used for parsing console input into an AST. Both these techniques are to increase the modularity and compositionality of the code.
+DRAWING depends on the [cats](http://typelevel.org/cats/), [scala parser combinators](https://github.com/scala/scala-parser-combinators) and [scalatest](http://www.scalatest.org/) libraries. Cats is used for encoding effects (e.g. parser failure, state change etc.) as types, using monads. Parser combinators are used for parsing console input into almost like an AST. Both these techniques are to increase the modularity and compositionality of the code, and to provide basis for future extension.
