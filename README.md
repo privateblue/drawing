@@ -12,6 +12,8 @@ Use the following commands to draw:
 | `B x y c` | Bucket fill at `(x,y)` with color `c`. |
 | `Q` | Quit. |
 
+Mind that coordinates are all 0-based (meaning the top left corner of the canvas is `(0,0)`).
+
 ## Build and run
 
 You can run the program from SBT by issuing `sbt run`, or you can build it with `sbt assembly`, and then run it with `java -jar target/scala-2.11/drawing.jar`.
